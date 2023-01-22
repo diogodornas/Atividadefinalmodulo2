@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de recados</title>
+        <link rel="stylesheet" href="../home/home.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <h1 id="h1" >Lista de recados</h1>
+        </header>
+        <div class="section-input">
+            <input type="text" id="titulo" placeholder="Título" >
+            <input type="text" id="descricao" placeholder="Descrição" >
+            <button id="btn-sub">Salvar</button>
+        </div>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">título</th>
+                        <th scope="col">descrição</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="mostrarLinha" >
+                </tbody>
+            </table>
+            <footer class="data-btn" >
+                <button onclick="sair()" >Sair</button>
+            </footer>
+        </main>
+        <script src="./home.js" ></script>
+    </body>
+</html>

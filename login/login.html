@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="./login.css">
+    </head>
+    <body>
+        <div class="container-main" >
+            <div class="imgUp" >
+                <img src="../images/img envelope.jpg" />
+            </div>
+            <div class="logo-area" >
+                <img src="../images/envelope.png" alt="Sistema do logo" />
+            </div>
+            <section class="section-login" >
+                <form id="form-login"  >
+                    <main>
+                    <div class="data-box" >
+                        <label for="email" >E-mail</label>
+                        <input type="email" name="email" id="email" autocomplete="on" placeholder="Digite o seu e-mail">
+                    </div>
+                    <br>
+                    <div class="data-box" >
+                        <label for="password" >Senha</label>
+                        <input type="password" name="password" id="password" autocomplete="on" placeholder="Digite a sua senha">
+                    </div>
+                    </main>
+                </form>
+                    <footer class="data-box">
+                        <button onclick="entrar()">Entrar</button>
+                        <a href="../cadastro/cadastro.html" >Cadastrar</a>
+                    </footer>                        
+            </section>
+        </div>
+        <script src="./login.js" ></script>
+    </body>
+</html>

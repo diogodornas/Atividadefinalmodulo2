@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de novos usurários</title>
+        <link rel="stylesheet" href="../register/register.css">
+    </head>
+    <body>
+        <div class="container" >
+            <div class="imgUp" >
+                <img src="../images/img envelope.jpg" />
+            </div>
+            <div class="logo-area" >
+                <img src="../images/envelope.png" alt="Sistema do logo" />                
+            </div>
+            <section class="section-login" >
+                <form id="form-login" >
+                    <h2 id="msgSuccess" ></h2>
+                    <h2 id="msgError" ></h2>
+                    <main>
+                        <div class="data-box">
+                            <label id='labelNome' for="nome">&nbsp;&nbsp; Nome &nbsp;&nbsp;</label>
+                            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+                        </div>
+                        <br>
+                        <div class="data-box" >
+                            <label  id="labelEmail" for="email" >&nbsp;&nbsp; E-mail &nbsp;&nbsp;</label>
+                            <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
+                        </div>
+                        <br>
+                        <div class="data-box" >
+                            <label id="labelSenha" for="password" >&nbsp;&nbsp; Senha &nbsp;&nbsp;</label>
+                            <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+                        </div>
+                    </main>
+                    <footer class="data-box">
+                        <button id="btn-submit" type="submit" onclick="cadastrar()"  >Criar conta</button>
+                        <a href="../login/login.html" >Já possui uma conta? Clique aqui!</a>
+                    </footer>
+                   
+                </form>
+            </section>
+        </div>
+        <script src="../register/register.js" ></script>
+    </body>
+</html>
